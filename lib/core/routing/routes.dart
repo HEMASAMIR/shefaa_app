@@ -1,6 +1,6 @@
 class Routes {
   //onboarding screen
-  static const onBoardingScreen = '/onboarding';
+  static const onBoardingPage = '/onboarding';
   //LOGIN SCREEN
-  static const loginScreen = '/loginScreen';
+  static const loginPage = '/loginScreen';
 }

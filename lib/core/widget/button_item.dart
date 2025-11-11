@@ -1,0 +1,29 @@
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:shefaa_app_flutter/core/theming/fonts/manger_styles.dart';
+import 'package:shefaa_app_flutter/core/theming/manger_color/manger_color.dart';
+
+class ButtonItem extends StatelessWidget {
+  const ButtonItem({super.key, required this.text, required this.onPressed});
+  final String text;
+  final void Function() onPressed;
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      height: 55,
+      width: double.infinity.w,
+      decoration: BoxDecoration(
+        color: MangerColors.mainBlue,
+        borderRadius: BorderRadius.circular(20),
+      ),
+      child: MaterialButton(
+        onPressed: onPressed,
+        child: Text(
+          text,
+          style: MangerStyle.font600wSize18.copyWith(color: MangerColors.white),
+        ),
+      ),
+    );
+  }
+}

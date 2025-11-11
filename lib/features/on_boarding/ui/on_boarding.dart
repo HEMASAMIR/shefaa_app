@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:shefaa_app_flutter/core/theming/fonts/manger_styles.dart';
-import 'package:shefaa_app_flutter/features/on_boarding/ui/on_boarding/widget/button_start.dart';
-import 'package:shefaa_app_flutter/features/on_boarding/ui/on_boarding/widget/doctor_logo_text.dart';
-import 'package:shefaa_app_flutter/features/on_boarding/ui/on_boarding/widget/logo_text.dart';
+
+import '../../../core/theming/fonts/manger_styles.dart';
+import 'widget/button_start.dart';
+import 'widget/doctor_logo_text.dart';
+import 'widget/logo_text.dart';
 
 class OnboardingPage extends StatelessWidget {
   const OnboardingPage({super.key});
@@ -24,7 +25,7 @@ class OnboardingPage extends StatelessWidget {
                   textAlign: TextAlign.center,
                   style: MangerStyle.font400wSize10,
                 ),
-                const ItemButtonStarted(),
+                ItemButtonStarted(),
               ],
             ),
           ),

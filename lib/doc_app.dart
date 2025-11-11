@@ -16,12 +16,13 @@ class DocApp extends StatelessWidget {
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
         title: 'Doc App',
+
         theme: ThemeData(
           primaryColor: MangerColors.mainBlue,
           scaffoldBackgroundColor: MangerColors.white,
         ),
-        initialRoute: Routes.onBoardingScreen,
         onGenerateRoute: appRouter.generateRoute,
+        initialRoute: Routes.onBoardingPage,
       ),
     );
   }
