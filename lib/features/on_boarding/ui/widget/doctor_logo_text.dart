@@ -28,7 +28,7 @@ class DoctorAndlogAndText extends StatelessWidget {
             right: 0,
             left: 0,
             child: Text(
-              'Best Doctor\n Appointment App',
+              'Best Doctor Appointment App',
               textAlign: TextAlign.center,
               style: MangerStyle.fontBoldSize32,
             ),
